@@ -40,3 +40,17 @@ let kids = sibbling({
 },{
 	name : 'An'
 })
+
+/*
+let's try to delete the object
+*/
+
+
+delete kids.uncle
+
+console.log(kids)
+
+/*
+after that we can see the object change
+kids become an object without the uncle property
+*/
