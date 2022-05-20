@@ -105,6 +105,11 @@ value of clone[key] if we want to pass it to parameter
 	let cat = new Clone({}, Animal)
 	console.log(cat.First.name == Animal.First.name)
 	// equivaut a false
+	/*
+	To understand this we need to know what is object
+	Object is not the same that variable primary
+	object refer to memory
+	*/
 	First = {
 	    name : 'heyhey',
 	    another : 'Preperty',
