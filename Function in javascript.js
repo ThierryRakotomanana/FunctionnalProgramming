@@ -59,6 +59,11 @@ kids become an object without the uncle property
 /*
 
 une version plus amelirée du clonnage d'objet
+j'ai remarque que dans le code ci-dessus qu'il
+y a une erreur, en effet clone.key is undefined
+because key is string, and we need to set the
+value of clone[key] if we want to pass it to parameter
+
 
 */
 
