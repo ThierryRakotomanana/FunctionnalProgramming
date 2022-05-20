@@ -103,7 +103,8 @@ value of clone[key] if we want to pass it to parameter
 	}
 
 	let cat = new Clone({}, Animal)
-
+	console.log(cat.First.name == Animal.First.name)
+	// equivaut a false
 	First = {
 	    name : 'heyhey',
 	    another : 'Preperty',
