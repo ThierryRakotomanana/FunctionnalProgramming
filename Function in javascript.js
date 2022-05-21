@@ -166,3 +166,19 @@ function IsDivBy(numb , div){
 	}
 	return false
 }
+
+/*
+
+and we can pursuie this 
+cause the function IsDivBy
+just return a true or false
+
+*/
+function ShowPrime(numb = 0){
+	let div = 0;
+    for(let i = 1; i < 5 ; i++){
+		div = i == 1 ? 2 : (2*i - 1)
+		if((numb % div == 0) && numb != div) return false;
+	}
+    return true
+}
