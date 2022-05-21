@@ -146,3 +146,23 @@ function IsDivBy(numb , div){
 	}
 	return false
 }
+
+/*
+Optimize, cause the value
+2, 3, 5 and 7 are Prime
+*/
+
+function ShowPrime(numb){
+	let div = 0;
+    	for(let i = 1; i < 5 ; i++){
+		div = i == 1 ? 2 : (2*i - 1)
+		if((IsDivBy(numb, div)) && numb != div) return false;
+	}
+    return true
+}
+function IsDivBy(numb , div){
+	if(numb % div == 0 ){
+		return true
+	}
+	return false
+}
