@@ -125,3 +125,24 @@ value of clone[key] if we want to pass it to parameter
 	    }
 	}
 
+/* 
+Today we continue our sprint 
+We optimize a code who show us
+If number is prime Or Not
+
+*/
+
+function ShowPrime(numb){
+	let div = 0;
+	for(let i = 1; i < 5 ; i++){
+		div = i == 1 ? 2 : (2*i - 1)
+		if(! (IsDivBy(numb, div))) continue;
+		console.log(numb)
+	}
+}
+function IsDivBy(numb , div){
+	if(numb % div == 0 ){
+		return true
+	}
+	return false
+}
