@@ -70,7 +70,7 @@ value of clone[key] if we want to pass it to parameter
 	function Clone(clone , Objet){
 		for(let key in Objet){
 			if(typeof Objet[key] == 'object'){
-				clone[key] = {}
+				clone[key] = {} // we need to initialise an object if we want set it a proprety
 				Clone(clone[key], Objet[key])
 			} else{
 				clone[key] = Objet[key]
