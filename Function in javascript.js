@@ -2,7 +2,7 @@
 	function Clone(clone, Objet){
 		for(let key in Objet){
 			if(typeof key == 'object'){
-				Clone(clone[key], key)
+				Clone(clone[key], key) //here we can see an error because key is just string not an object
 			} else{
 				clone[key] = Objet[key]
 			}
